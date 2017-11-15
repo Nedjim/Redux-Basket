@@ -25,9 +25,10 @@ export const emptyCart = () => {
 	};
 };
 
-export const setQuantity = (setQuantityType, quantity) => {
+export const setQuantity = (productId, setQuantityType, quantity) => {
 	return {
 		type: SET_QUANTITY,
+		productId,
 		setQuantityType,
 		quantity
 	};
