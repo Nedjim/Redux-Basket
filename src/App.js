@@ -5,10 +5,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <header>
           <h1>Redux Basket</h1>
-          <Navbar />
+          {Navbar()}
         </header>
       </div>
     );
