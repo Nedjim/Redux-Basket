@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div className='App'>
         <header>
-          <h1>Redux Basket</h1>
+          <div className='title-header'>
+            <h3>Redux Basket</h3>
+          </div>
           {Navbar()}
         </header>
         {Products()}

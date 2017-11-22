@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 html {
   font-size: 16px;
 }
@@ -8,44 +10,54 @@ body {
 }
 
 header {
-  background: #E0E0E0;  
+  background: #212121;
   padding-top: 0.5rem;
+  text-align: left;
+}
+.title-header{
+  margin-left: 3rem;
 }
 
-nav {
-  background: #212121;
-  padding: 1rem;
+.title-header h3 {
+  color:white ;
+  font-family: 'Indie Flower', cursive;
 }
+
+.title-header, nav {
+  display: inline-block;
+}
+nav {
+  text-align: center;
+  float: right;
+  margin-right: 3rem;
+}
+
 li {
   list-style-type: none;
   display: inline-block;
-  height: 2.5rem;
   width: 5rem;
-  padding-top: 0.5rem;
-  background: #377bb5;
-  margin-right: 1rem;
-  border-radius: 0.5rem;
+  border-right: 1px solid #424242 ;
 }
 
 a {
   color: white;
 }
 
-li:hover {
-  background: #F5F5F5;
+li:hover:first-child,li:hover:nth-child(2) {
+  background: #424242;
 }
 
 li:hover a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
-.active {
-   background: #F5F5F5;
+.basket-icon {
+  width: 1.5rem;
 }
-.active a {
-  color: black;
-  text-decoration: none;
+
+.basket-icon:hover {
+  cursor: pointer;
 }
 
 #products {
